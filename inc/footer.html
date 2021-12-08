@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sevendays KOBE</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+    <link rel="stylesheet" href="../css/style.css?2">
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+ 
+    <script type="text/javascript" src="../js/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.mainimgSlider').slick({
+                autoplay: true,
+                autoplaySpeed: 4000,
+                fade: false,
+                arrows: true,
+                speed: 250,
+                dots: true,
+                dotsClass: 'dot-class',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '0%',
+                nextArrow: $('.mainimgNext'),
+                prevArrow: $('.mainimgPrev'),
+                responsive: [{
+                    breakpoint: 800,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1
+                    }
+                }]
+            });
+        })
+    </script>
+
+    <script>
+        $(function(){
+  var state = false;
+  var scrollpos;
+ 
+  $('.hamburger').on('click', function(){
+    if(state == false) {
+      scrollpos = $(window).scrollTop();
+      $('body').addClass('fixed').css({'top': -scrollpos});
+      $('.menu').addClass('open');
+      state = true;
+    } else {
+      $('body').removeClass('fixed').css({'top': 0});
+      window.scrollTo( 0 , scrollpos );
+      $('.menu').removeClass('open');
+      state = false;
+    }
+  });
+ 
+});
+    </script>
+
+</head>
+
+<body>
+
+  
+    <section class="footer">
+        <div class="wrapper">
+            <img src="../images/footer_logo.png" class="logo">
+
+            <div class="navi">
+
+                <div class="contact">
+                    <h3 class="en">CONTACT</h3>
+                    <a href="https://ask.step.rakuten.co.jp/inquiry-form/?ms=500&shop_id=400262" class="btn btn-border">お問い合わせ</a>
+                    <p>写真を添付可能なWEBフォームからお問合せができます。<br>
+                        お問い合わせ頂いたタイミングによっては、回答にお時間がかかる場合がございます。<br>
+                        順次ご連絡いたしますので、あらかじめご了承ください。</p>
+
+                    <div class="copy en">(C) Sevendays KOBE All Rights Reserved,</div>
+                </div>
+
+                <div class="category">
+                    <h3 class="en">CATEGORY</h3>
+                    <ul>
+                        <li><a href="">ALL ITEM</a></li>
+                        <!-- <li><a href="">SALE</a></li> -->
+                        <li class="en"><a href="https://item.rakuten.co.jp/7days/c/0000000100/">SHOES</a></li>
+                        <li class="en"><a href="https://item.rakuten.co.jp/7days/c/0000000101/">ACCESSORY</a></li>
+                          <li class="en"><a href="https://item.rakuten.co.jp/7days/c/0000000102/">MASK</a></li>
+                          <li class="en"><a href="https://item.rakuten.co.jp/7days/c/0000000103/">GOODS</a></li>
+                          <li class="en"><a href="https://item.rakuten.co.jp/7days/c/0000000104/">BAG</a></li>
+                          <li class="en"><a href="https://item.rakuten.co.jp/7days/c/0000000105/">COSME</a></li>
+                    </ul>
+                </div>
+
+                <div class="guide">
+                    <h3 class="en">SHOPPING GUIDE</h3>
+                    <ul>
+                        
+                        <li><a href="https://www.rakuten.co.jp/7days/info2.html#payment">お支払い方法について</a></li>
+                        <li><a href="https://www.rakuten.co.jp/7days/info2.html#shipping">配送について</a></li>
+                        <li><a href="https://www.rakuten.co.jp/7days/info2.html#return_policy">返品・交換について</a></li>
+                        <!-- <li><a href="">お客様の声</a></li> -->
+                        <li><a href="https://www.rakuten.co.jp/7days/info.html">会社概要</a></li>
+                        <li><a href="www.rakuten.co.jp/7days/news.html">メールマガジン登録</a></li>
+                        <li><a href="https://www.rakuten.co.jp/" target="_blank">楽天市場</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script>
+        $(function() {
+    $('.hamburger').click(function() {
+        $(this).toggleClass('active');
+ 
+        if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+        } else {
+            $('.globalMenuSp').removeClass('active');
+        }
+    });
+});
+    </script>
+</body>
+
+</html>

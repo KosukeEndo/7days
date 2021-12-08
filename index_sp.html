@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sevendays KOBE</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css?2">
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+ 
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.mainimgSlider').slick({
+                autoplay: true,
+                autoplaySpeed: 4000,
+                fade: false,
+                arrows: true,
+                speed: 250,
+                dots: true,
+                dotsClass: 'dot-class',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '0%',
+                nextArrow: $('.mainimgNext'),
+                prevArrow: $('.mainimgPrev'),
+                responsive: [{
+                    breakpoint: 800,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1
+                    }
+                }]
+            });
+        })
+    </script>
+
+    <script>
+        $(function(){
+  var state = false;
+  var scrollpos;
+ 
+  $('.hamburger').on('click', function(){
+    if(state == false) {
+      scrollpos = $(window).scrollTop();
+      $('body').addClass('fixed').css({'top': -scrollpos});
+      $('.menu').addClass('open');
+      state = true;
+    } else {
+      $('body').removeClass('fixed').css({'top': 0});
+      window.scrollTo( 0 , scrollpos );
+      $('.menu').removeClass('open');
+      state = false;
+    }
+  });
+ 
+});
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <iframe src=" https://www.rakuten.ne.jp/gold/7days/inc/header.html" frameborder="0" scrolling="no" class="headerframe"></iframe>
+
+        <div class="wrapper">
+                <!-- ここからスマホ用のハンバーガーメニュー -->
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  
+                  <nav class="globalMenuSp">
+                      <ul>
+                          <li class="en"><a href="https://search.rakuten.co.jp/search/mall/?sid=400262">ALL ITEM</a></li>
+                          <li class="en"><a href="https://item.rakuten.co.jp/7days/c/0000000100/">SHOES</a></li>
+                          <li class="en"><a href="https://item.rakuten.co.jp/7days/c/0000000101/">ACCESSORY</a></li>
+                          <li class="en"><a href="https://item.rakuten.co.jp/7days/c/0000000102/">MASK</a></li>
+                          <li class="en"><a href="https://item.rakuten.co.jp/7days/c/0000000103/">GOODS</a></li>
+                          <li class="en"><a href="https://item.rakuten.co.jp/7days/c/0000000104/">BAG</a></li>
+                          <li class="en"><a href="https://item.rakuten.co.jp/7days/c/0000000105/">COSME</a></li>
+                      </ul>
+                  </nav>
+<!-- スマホ用メニューここまで -->
+            </div>
+    </header>
+
+    <!-- ここにスライダー -->
+    <article>
+        <div id="mainimg">
+            <div class="mainimgSliderWrap">
+                <div class="mainimgSlider">
+                    <!--<div><a href="https://www.rakuten.ne.jp/gold/7days/sale/ss/"><img src="https://image.rakuten.co.jp/7days/cabinet/banner/202109ss_sptopbnr.jpg" alt="写真"></a></div>-->
+                    <!--<div><a href="https://item.rakuten.co.jp/7days/ma-doublemesh/"><img src="https://image.rakuten.co.jp/7days/cabinet/banner/main-bnr01.jpg" alt="写真"></a></div>-->
+                    <!--<div><a href="https://item.rakuten.co.jp/7days/ma-innercopper/"><img src="https://image.rakuten.co.jp/7days/cabinet/banner/main-innnercopper.jpg" alt="写真"></a></div>-->
+                    <!--<div><a href="https://item.rakuten.co.jp/7days/ma-copper/"><img src="https://image.rakuten.co.jp/7days/cabinet/banner/main-warmmask.jpg" alt="写真"></a></div>-->
+                    <div><a href="https://item.rakuten.co.jp/7days/bo-556/"><img src="https://image.rakuten.co.jp/7days/cabinet/banner/556_bnr_12.jpg" alt="写真"></a></div>
+                    <div><a href="https://item.rakuten.co.jp/7days/bo-555/"><img src="https://image.rakuten.co.jp/7days/cabinet/banner/555_bnr_12.jpg" alt="写真"></a></div>
+                    <div><a href="https://item.rakuten.co.jp/7days/bo-2888/"><img src="https://image.rakuten.co.jp/7days/cabinet/banner/2888_bnr_12.jpg" alt="写真"></a></div> 
+                    <div><a href="https://item.rakuten.co.jp/7days/bo-2895/"><img src="https://image.rakuten.co.jp/7days/cabinet/banner/2895_bnr_12.jpg" alt="写真"></a></div> 
+                </div>
+                <div class="mainimgPrev"></div>
+                <div class="mainimgNext"></div>
+            </div>
+        </div><!-- /#mainimg -->
+    </article>
+
+    <!-- ここからインフォメーション -->
+
+    <!--<section class="info">
+        <div class="wrapper">
+            <div class="en tit">INFORMATION</div>
+            <p>【重要】夏季休業のお知らせ <a href="https://item.rakuten.co.jp/7days/c/0000000107/"><font size="2">詳細はこちら</font></a>
+            </p>
+        </div>
+    </section>-->
+
+    <!-- ここから新着アイテム -->
+
+    <section class="newarrival">
+        <div class="wrapper">
+            <h2>NEW ARRIVALS</h2>
+
+            <div class="container">
+                <div class="item">
+                    <a href="https://item.rakuten.co.jp/7days/bo-555/">
+                        <img src="https://image.rakuten.co.jp/7days/cabinet/items/shoes/bo-555/bo-555.jpg">
+                    </a>
+                  <p>ロングブーツ</p>
+                    <p class="price">13,780円(税込)</p>
+                </div>
+                <div class="item">
+                    <a href="https://item.rakuten.co.jp/7days/bo-556/">
+                        <img src="https://image.rakuten.co.jp/7days/cabinet/items/shoes/bo-556/bo-556_1203.jpg">
+                    </a>
+                  <p>ニーハイブーツ</p>
+                    <p class="price">14,780円(税込)</p>
+                </div>                
+                <div class="item">
+                    <a href="https://item.rakuten.co.jp/7days/lo-2885/">
+                        <img src="https://image.rakuten.co.jp/7days/cabinet/items/shoes/lo-2885/lo-28852top.jpg">
+                    </a>
+                  <p>2wayローファー型スリッポン</p>
+                    <p class="price">12,800円(税込)</p>
+                </div>
+
+               <!-- <div class="item">
+                    <a href="https://item.rakuten.co.jp/7days/ma-animal/">
+                        <img src="https://image.rakuten.co.jp/7days/cabinet/items/animal/top.jpg">
+                    </a>
+                    <p>【2枚セット】アニマル 恐竜 パンダ マスク キッズ用</p>
+                    <p class="price">1,480円 (税込)</p>
+                </div>
+                 <div class="item">
+                    <a href="">
+                        <img src="images/item05.png">
+                    </a>
+                    <p>ここに商品名が入ります商品名</p>
+                    <p class="price">1,000円</p>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="images/item06.png">
+                    </a>
+                    <p>ここに商品名が入ります商品名</p>
+                    <p class="price">1,000円</p>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="images/item07.png">
+                    </a>
+                    <p>ここに商品名が入ります商品名</p>
+                    <p class="price">1,000円</p>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="images/item08.png">
+                    </a>
+                    <p>ここに商品名が入ります商品名</p>
+                    <p class="price">1,000円</p>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="images/item09.png">
+                    </a>
+                    <p>ここに商品名が入ります商品名</p>
+                    <p class="price">1,000円</p>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="images/item10.png">
+                    </a>
+                    <p>ここに商品名が入ります商品名</p>
+                    <p class="price">1,000円</p>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="images/item11.png">
+                    </a>
+                    <p>ここに商品名が入ります商品名</p>
+                    <p class="price">1,000円</p>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="images/item12.png">
+                    </a>
+                    <p>ここに商品名が入ります商品名</p>
+                    <p class="price">1,000円</p>
+                </div> -->
+
+            </div>
+
+            <!-- <a href="https://search.rakuten.co.jp/search/mall/?sid=400262" class="btn btn-border"> VIEW MORE</a> -->
+        </div>
+    </section>
+
+    <!-- ここからフューチャー -->
+
+    <section class="feature">
+
+        <div class="wrapper">
+            <h2>FEATURE</h2>
+
+            <div class="container">
+                <div class="item">
+                    <a href="https://item.rakuten.co.jp/7days/bo-2888/">
+                        <img src="https://image.rakuten.co.jp/7days/cabinet/items/shoes/bo-2888/bo-2888.jpg">
+                    </a>
+                  <p>スクエアブーツ</p>
+                    <p class="price">15,800円(税込)</p>
+                </div>
+                <div class="item">
+                    <a href="https://item.rakuten.co.jp/7days/sa-kfp05-01f_leo/">
+                        <img src="https://image.rakuten.co.jp/7days/cabinet/items/shoes/sa-kfp05-01f/imgrc0082809742.jpg">
+                    </a>
+                  <p>ふわもこバレエシューズ</p>
+                    <p class="price">13,300円(税込)</p>
+                </div>
+                <div class="item">
+                    <a href="https://item.rakuten.co.jp/7days/sa-kfp05-01f/">
+                        <img src="https://image.rakuten.co.jp/7days/cabinet/items/shoes/sa-kfp05-01f/sa-kfp05-01f_top2.jpg">
+                    </a>
+                  <p>ふわもこバレエシューズ</p>
+                    <p class="price">12,380円(税込)</p>
+                </div>
+                <div class="item">
+                    <a href="https://item.rakuten.co.jp/7days/sa-python/">
+                        <img src="https://image.rakuten.co.jp/7days/cabinet/items/shoes/sa-python/sa-python_top.jpg">
+                    </a>
+                  <p>パイソンバレエシューズ</p>
+                    <p class="price">10,800円(税込)</p>
+                </div>
+           
+                <div class="item">
+                    <a href="https://item.rakuten.co.jp/7days/pa-suede-552/">
+                        <img src="https://image.rakuten.co.jp/7days/cabinet/items/shoes/pa-suede-552/pa-suede-552_top.jpg">
+                    </a>
+                  <p>スエードパンプス</p>
+                    <p class="price">8,800円(税込)</p>
+                </div>
+                <div class="item">
+                    <a href="https://item.rakuten.co.jp/7days/boo-sheep-558b/">
+                        <img src="https://image.rakuten.co.jp/7days/cabinet/items/shoes/boo-sheep-558b/sheep-booty-top.jpg">
+                    </a>
+                  <p>シープスキンブーティー</p>
+                    <p class="price">12,000円(税込)</p>
+                </div>
+                <div class="item">
+                    <a href="https://item.rakuten.co.jp/7days/boo-kuroko-558b/">
+                        <img src="https://image.rakuten.co.jp/7days/cabinet/items/shoes/boo-kuroko-558b/boo-kuroko-558b_top.jpg">
+                    </a>
+                  <p>クロコチャンキーブーツ</p>
+                    <p class="price">13,800円(税込)
+                    </p>
+                </div>
+                
+                <div class="item">
+                    <a href="https://item.rakuten.co.jp/7days/sa-pointeddo-p-suede/">
+                        <img src="https://image.rakuten.co.jp/7days/cabinet/items/shoes/p-suede/point-suede-top_1022.jpg">
+                    </a>
+                  <p>ポインテッド<br>ューズスエード</p>
+                    <p class="price">10,800円(税込)</p>
+                </div>
+                
+            </div>
+
+            <a href="https://search.rakuten.co.jp/search/mall/?sid=400262" class="btn btn-border"> VIEW MORE</a>
+        </div>
+    </section>
+
+    <section class="category">
+        <div class="wrapper">
+            <h2>CATEGORY</h2>
+
+            <div class="container">
+                <div class="item img_wrap">
+                    <p>SHOES</p>
+                    <a href="https://item.rakuten.co.jp/7days/c/0000000100/">
+                        <img src="images/cat01.png">
+                    </a>
+                </div>
+                <div class="item img_wrap">
+                    <p>BAG</p>
+                    <a href="https://item.rakuten.co.jp/7days/c/0000000104/">
+                        <img src="images/cat02.png">
+                    </a>
+                </div>
+                <div class="item img_wrap">
+                    <p>MASK</p>
+                    <a href="https://item.rakuten.co.jp/7days/c/0000000102/">
+                        <img src="images/cat03.png">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <iframe src=" https://www.rakuten.ne.jp/gold/7days/inc/footer.html" frameborder="0" scrolling="no" class="footerframe"></iframe>
+    <script>
+        $(function() {
+    $('.hamburger').click(function() {
+        $(this).toggleClass('active');
+ 
+        if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+        } else {
+            $('.globalMenuSp').removeClass('active');
+        }
+    });
+});
+    </script>
+</body>
+
+</html>
