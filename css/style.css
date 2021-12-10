@@ -538,6 +538,11 @@ text-align: center;
 
 }
 
+iframe.newframe{
+  width: 100%;
+  height: 400px;
+}
+
 .newarrival p {
   font-size: 14px;
     /* line-height: 0.6; */
@@ -567,7 +572,7 @@ text-align: center;
 }
 
 a.btn-border {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   border-radius: 0;
   background: #fff;
   width: 310px;
@@ -606,11 +611,16 @@ a.btn-border:hover {
 
 .feature p {
   font-size: 14px;
-  line-height:1.6;
+
 }
 
 .feature .price {
-  font-size: 18px;
+  font-size: 14px;
+}
+
+.feature .saletxt{
+  color:#3B7088;
+  margin-top: 20px;
 }
 
 .feature .item {
@@ -634,7 +644,7 @@ a.btn-border:hover {
 }
 
 a.btn-border {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   border-radius: 0;
   background: #fff;
   width: 310px;
@@ -676,35 +686,22 @@ a.btn-border:hover {
 }
 
 .category .img_wrap {
-  border: 1px solid #ddd;
-  width: 330px;
-  height: 260px;
+
+  width: 49%;
   margin: 0 auto;
   overflow: hidden;
   cursor: pointer;
+  text-align: center;
   position: relative;
 }
 
-.category .img_wrap img {
-  width: 100%;
-  transition-duration: 0.5s;
-}
-
-.category .img_wrap:hover img {
-  transform: scale(1.2);
-  transition-duration: 0.5s;
-}
-
 .img_wrap p {
-  position: absolute;
+
   z-index: 9999999;
   top: 45%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 18px;
+  color: #000;
+  font-size: 15px;
 }
 
 /* ここからフッター */
@@ -723,8 +720,8 @@ a.btn-border:hover {
 }
 
 .footer {
-  background-color: #343436;
-  padding: 0 0 0 0;
+  background-color: #D3D3D3;
+  padding: 1rem 0;
 }
 
 .navi {
@@ -734,20 +731,20 @@ a.btn-border:hover {
 
 .footer h3 {
   font-size: 18px;
-  color: #fff;
-  border-bottom: 2px solid #fff;
+  color: ##313131;
+  border-bottom: 2px solid #313131;
   padding-bottom: 14px;
 }
 
 .contact {
   width: 411px;
   margin-right: 24px;
-  color: #fff;
+  color: #313131;
 
 }
 
 .contact p {
-  color: #fff;
+  color: #313131;
   font-size: 13px;
   line-height: 1.9;
 }
@@ -759,7 +756,8 @@ a.btn-border:hover {
 
 .contact a.btn-border {
   border-radius: 0;
-  background: #fff;
+  background: #909090;
+  color: #fff;
   width: 410px;
   height: 56px;
 }
@@ -779,15 +777,20 @@ a.btn-border:hover {
   color: #fff;
   font-size: 14px;
   padding: 0;
+  display: inline-block;
 }
 
 .footer .category li {
   padding: 10px 0;
 }
 
+.footer .mgrt{
+  margin-right: 3rem;
+}
+
 .footer .category a {
   list-style: none;
-  color: #fff;
+  color: #313131;
 }
 
 
@@ -812,13 +815,18 @@ a.btn-border:hover {
 
 .footer .guide a {
   list-style: none;
-  color: #fff;
+  color: #313131;
+}
+.footer .copy{
+text-align: center;
+padding: 0 0 3% 0px;
+font-size:14px;
 }
 .hd{display: block;}
 .hamburger{display: none;}
 nav.globalMenuSp{display: none;}
 .headerframe{width: 100%;height:141px;}
-.footerframe{width: 100%;height:605px;}
+.footerframe{width: 100%;height:500px;}
 
 /* ここからスマートフォン */
 
@@ -826,13 +834,15 @@ nav.globalMenuSp{display: none;}
 
   .hamburger{display: block;}
 .headerframe{width: 100%;height:70px;}
-.footerframe{width: 100%;height:1155px;}
+.footerframe{width: 100%;height:1085px;}
   
   .globalMenuSp{
     font-size: 16px;
   }
   nav.globalMenuSp{display: block;}
-
+  .mainimgSlider .slick-slide img{
+    height: auto;
+  }
   .wrapper {
     width: 100%;
     padding: 0 2%;
@@ -841,6 +851,14 @@ nav.globalMenuSp{display: none;}
 
 header a::after{
 
+}
+
+iframe.newframe{
+  height: auto;
+}
+
+.catch{
+  display: none;
 }
 
 header li a{
@@ -854,7 +872,7 @@ nav.globalMenuSp{
 }
 
   .logo {
-    width: 64%;
+    width: 50%;
   }
 
   .hd_catch p {
@@ -915,6 +933,14 @@ nav.globalMenuSp{
     font-size: 24px;
   }
 
+  .itemacat .catbox{
+    width: 49%;
+  }
+  .heelcat .catbox{
+    max-width: none;
+    
+  }
+
   /* ----------------- */
   .newarrival .item{
     width: 33%;
@@ -923,7 +949,7 @@ nav.globalMenuSp{
 
   .feature p,
   .newarrival p {
-    line-height: 1.86;
+    line-height: 1;
   }
 
 
@@ -939,18 +965,25 @@ nav.globalMenuSp{
 
 
   .feature .wrapper {
-    padding-bottom: 15%;
+    padding-bottom: 0;
   }
 
   .feature h2 {
     margin: 54px 0;
   }
-
+  
+  .sliderArea{
+    padding: 0;
+  }
   /* footer */
 
   .footer .navi {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .footer .mgrt{
+    margin-right: 13rem;
   }
 
   .contact a.btn-border {
